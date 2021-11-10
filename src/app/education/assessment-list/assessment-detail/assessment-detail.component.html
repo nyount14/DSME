@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12">
+   <div class="btn-group" appDropdown>
+     <button type="button" class="btn btn-primary dropdown-togggle">
+       Test button <span class="caret"></span>
+     </button>
+     <ul class="dropdown-menu">
+       <li><a href="#">Item number 1</a></li>
+       <li><a href="#">Item number 2</a></li>
+       <li><a href="#">Item number 3</a></li>
+     </ul>
+   </div>
+  </div>
+</div> |
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
+    <div class="form-group">
+      <label>Account Name</label>
+      <input
+        type="text"
+        class="form-control"
+        #accountName>
+    </div>
+    <div class="form-group">
+      <select class="form-control" #status>
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+        <option value="hidden">Hidden</option>
+      </select>
+    </div>
+

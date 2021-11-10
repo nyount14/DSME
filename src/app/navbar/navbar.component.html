@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+  <a class="navbar-brand" href="javascript:void(0)">DSME</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <div class="dropdown"[ngClass]="{'show': toggle}">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"(click)="onSelect()">
+            Education Topics
+          </button>
+          <div class="dropdown-menu" [ngClass]="{'show': toggle}">
+            <a class="dropdown-item"routerLink="healthyEating">Healthy Eating</a>
+            <a class="dropdown-item"routerLink="physicalActivity">Physical Activity</a>
+            <a class="dropdown-item"routerLink="takingMedication">Taking Medications</a>
+          </div>
+        </div>
+        </li>
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </div>
+</nav>
